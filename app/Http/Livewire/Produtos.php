@@ -34,5 +34,7 @@ class Produtos extends Component
             'marca' => $this->marca
         ]);
 
+        return redirect()->to('/');
+
     
 }}

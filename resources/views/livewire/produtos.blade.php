@@ -1,5 +1,9 @@
 <div>
-    <form wire:submit.prevent="store">
+<nav>
+  <button><a href="/">Início</a></button>
+</nav>
+</br>
+    <form wire:submit.prevent="store" method="post" action="http://127.0.0.1:8000">
         <label>Nome</label>
         <input type="text" wire:model="nome">
         @error('nome') <span>{{ $message }}</span> @enderror
@@ -37,6 +41,4 @@
   }
 </style>
 
-<nav>
-  <button><a href="/">Início</button>
-</nav>
+

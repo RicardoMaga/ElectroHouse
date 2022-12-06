@@ -18,6 +18,6 @@
 
 <nav>
   <button>Início</button>
-  <button><a href="/produtos">Produtos</button>
+  <button><a href="/produtos">Produtos</a></button>
   <button>Contato</button>
 </nav>
