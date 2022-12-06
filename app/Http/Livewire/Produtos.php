@@ -10,6 +10,7 @@ class Produtos extends Component
     public $nome;
     public $preco;
     public $modelo;
+    public $marca;
     public function render()
     {
         return view('livewire.produtos');
@@ -21,14 +22,16 @@ class Produtos extends Component
         $this->validate([
             'nome' => 'required|max:255',
             'modelo' => 'required',
-            'preco' => 'required|numeric'
+            'preco' => 'required|numeric',
+            'marca' => 'required|max:255'
         ]);
 
         // Cria um novo produto
         Produto::create([
             'nome' => $this->nome,
             'modelo' => $this->modelo,
-            'preco' => $this->preco
+            'preco' => $this->preco,
+            'marca' => $this->marca
         ]);
 
     

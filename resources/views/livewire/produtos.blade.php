@@ -4,6 +4,10 @@
         <input type="text" wire:model="nome">
         @error('nome') <span>{{ $message }}</span> @enderror
 
+        <label>Marca</label>
+        <input type="text" wire:model="marca">
+        @error('Marca') <span>{{ $message }}</span> @enderror
+
         <label>Modelo</label>
         <input type="text" wire:model="modelo">
         @error('modelo') <span>{{ $message }}</span> @enderror
