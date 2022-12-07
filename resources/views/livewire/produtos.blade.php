@@ -2,7 +2,7 @@
 <nav>
   <button><a href="/">Início</a></button>
   <button><a href="/login">Login</a></button>
-  <button ><a href="/Register">Registar</a></button>
+  <button ><a href="/register">Registar</a></button>
 </nav>
 </br>
 
