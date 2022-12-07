@@ -1,3 +1,4 @@
+
 <style>
   nav {
     display: flex;
@@ -16,8 +17,10 @@
   }
 </style>
 
-<nav>
+<nav style="background-color: #000000;">
+
   <button>Início</button>
   <button><a href="/produtos">Produtos</a></button>
   <button>Contato</button>
+  <button><a href="/login">Login</a></button>
 </nav>
