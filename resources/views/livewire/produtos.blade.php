@@ -1,32 +1,38 @@
 <div>
 <nav>
   <button><a href="/">Início</a></button>
-  <button>Contato</button>
   <button><a href="/login">Login</a></button>
+  <button ><a href="/Register">Registar</a></button>
 </nav>
 </br>
-    <form wire:submit.prevent="store" method="post" action="http://127.0.0.1:8000">
+
+    <form style="text-align: center;" wire:submit.prevent="store" method="post" action="http://127.0.0.1:8000">
         <label>Nome</label>
-        <input type="text" wire:model="nome">
+        <input type="text" style="align: left;" wire:model="nome">
         @error('nome') <span>{{ $message }}</span> @enderror
+        <br>
         <br>
 
         <label>Marca</label>
-        <input type="text" wire:model="marca">
+        <input type="text" style="align: left;" wire:model="marca">
         @error('Marca') <span>{{ $message }}</span> @enderror
         <br>
-    
+        <br>
+  
         <label>Modelo</label>
-        <input type="text" wire:model="modelo">
+        <input type="text" style="align: left;" wire:model="modelo">
         @error('modelo') <span>{{ $message }}</span> @enderror
         <br>
-
+        <br>
+    
+        
         <label>Preço</label>
-        <input type="text" wire:model="preco">
+        <input type="text" style="text-align: left;" wire:model="preco">
         @error('preco') <span>{{ $message }}</span> @enderror
         <br>
+        <br>
 
-        <button type="submit">Criar produto</button>
+        <button style="background-color: #757575" type="submit">Criar produto</button>
         
     </form>
 </div>
@@ -47,6 +53,9 @@
   button:hover {
     background-color: #444;
   }
+ 
+
+
 </style>
 
 

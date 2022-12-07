@@ -8,7 +8,7 @@ namespace App\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Contracts\Auth\Authenticatable;
 /**
  * Class User
  * 
@@ -28,7 +28,8 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @package App\Models
  */
-class User extends Model
+class User extends Model implements Authenticatable
+
 {
 	protected $table = 'users';
 
@@ -59,4 +60,38 @@ class User extends Model
 		'current_team_id',
 		'profile_photo_path'
 	];
+	
+
+    // ...
+
+    public function getAuthIdentifierName()
+    {
+        // Return the name of the primary key for the user model
+    }
+
+    public function getAuthIdentifier()
+    {
+        // Return the value of the primary key for the user model
+    }
+
+    public function getAuthPassword()
+    {
+        // Return the hashed password for the user model
+    }
+
+    public function getRememberToken()
+    {
+        // Return the "remember me" token for the user model
+    }
+
+    public function setRememberToken($value)
+    {
+        // Set the "remember me" token for the user model
+    }
+
+    public function getRememberTokenName()
+    {
+        // Return the name of the "remember me" token for the user model
+    }
+
 }

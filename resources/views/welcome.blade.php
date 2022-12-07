@@ -21,6 +21,6 @@
 
   <button>Início</button>
   <button><a href="/produtos">Produtos</a></button>
-  <button>Contato</button>
+  <button>Contacto</button>
   <button><a href="/login">Login</a></button>
 </nav>
