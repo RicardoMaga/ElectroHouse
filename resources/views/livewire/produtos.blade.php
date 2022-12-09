@@ -1,8 +1,7 @@
-<div>
+
 <nav>
-  <button><a href="/">Início</a></button>
-  <button><a href="/login">Login</a></button>
-  <button ><a href="/register">Registar</a></button>
+  <button><a href="/">Home</a></button>
+  <button class="hotbar_button"><a href="/login">Login</a></button>
 </nav>
 </br>
 
@@ -35,7 +34,7 @@
         <button style="background-color: #757575" type="submit">Criar produto</button>
         
     </form>
-</div>
+<
 <style>
   nav {
     display: flex;
@@ -44,7 +43,7 @@
   }
   button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 23px;
     background-color: #333;
     color: #fff;
     border: none;
@@ -53,8 +52,11 @@
   button:hover {
     background-color: #444;
   }
- 
-
+  .hotbar_button{
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
 
 </style>
 
