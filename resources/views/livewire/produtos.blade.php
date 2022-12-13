@@ -1,7 +1,6 @@
 
-<nav>
-  <button><a href="/">Home</a></button>
-  <button class="hotbar_button"><a href="/login">Login</a></button>
+<nav class="bg-neutral-700">
+<a href="/" class="text-2xl pt-4 pr-10 pl-2 pb-4 bg-neutral-700 text-white">ElectroHouse</a>
 </nav>
 </br>
 
