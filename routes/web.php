@@ -30,3 +30,6 @@ Route::middleware([
 });
 
 Route::get('/produtos', Produtos::class);
+Route::get('/comprar', function () {
+    return view('comprar');
+})->name('comprar');
