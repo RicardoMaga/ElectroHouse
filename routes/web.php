@@ -33,3 +33,8 @@ Route::get('/produtos', Produtos::class);
 Route::get('/comprar', function () {
     return view('comprar');
 })->name('comprar');
+
+Route::get('/produtos', Produtos::class);
+Route::get('/reservas', function () {
+    return view('reservas');
+})->name('reservas');
